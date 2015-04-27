@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to @user
     else
-      redirect_to :controller => 'home', action: => 'index'
+      render 'new'
     end
   end
 
