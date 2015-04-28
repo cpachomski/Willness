@@ -1,22 +1,26 @@
+
+<div class="header">
+  <h1> Willness </h1>
+</div>
+
 <div class='row'>
 
-
   <div class='col-md-4'>
-
+    <h1> SIGN </h1>
   </div>
 
-  <div class='col-md-4'>
+  <div class='col-md-4 form'>
     <%= bootstrap_form_for(@user) do |f| %>
-      <%= f.text_field :username %>
-      <%= f.email_field :email %>
-      <%= f.password_field :password %>
-      <%= f.password_field :password_confirmation %>
-      <%= f.submit "Ready"%>
+      <%= f.text_field :username, class: "form-control" %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <%= f.submit "Ready", class: "btn btn-default signup"%>
     <% end %>
   </div>
 
   <div class='col-md-4'>
-
+    <h1> UP </h1>
   </div>
 
 </div>
