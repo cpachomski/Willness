@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   #creates a remember_token for the current user and saves it in DB
   def remember
     self.remember_token = User.generate_remember_token
-    update_attribute(:remember_digest, User.digest(remember_token)
+    update_attribute(:remember_digest, User.digest(remember_token))
   end
 
   #takes in remember token and checks if it matches the hashed one
