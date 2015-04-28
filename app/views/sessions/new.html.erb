@@ -13,6 +13,9 @@
     <%= bootstrap_form_for(:session, url: login_path) do |f| %>
       <%= f.email_field :email, class: "form-control" %>
       <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :remember_me, class: 'checkbox' do  %>
+        <%= f.check_box 'Stay Logged in?' %>
+      <% end %>
       <%= f.submit "Welcome Back!", class: "btn btn-default signup"%>
     <% end %>
   </div>
