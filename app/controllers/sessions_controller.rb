@@ -8,8 +8,8 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       #log user in
       log_in(user)
-      #keep user logged in until signout
-      remember(user)
+      #retain remember_token if user chose to stay logged in
+      params[:session][:remember] == "1" ? remember(user) : forget(user)
       #redirect to user show page
       redirect_to user
     else

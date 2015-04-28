@@ -21,8 +21,8 @@ module SessionsHelper
 
   def forget(user)
     user.forget
-    cookies.delete[:user_id]
-    cookies.delete[:remember_token]
+    cookies.delete(:user_id)
+    cookies.delete(:remember_token)
   end
 
   #creates current user from session or cookies and checks if remember token is correct then logs in
