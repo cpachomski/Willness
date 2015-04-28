@@ -1,1 +1,12 @@
-<h1> Welcome id: <%= @user.id %> email: <%= @user.email %> </h1>
+<div class='row'>
+
+
+  <% if logged_in? %>
+    <%= link_to 'Log out', logout_path, method: 'delete', class:'btn btn-default' %>
+  <% end %>
+
+
+  <h1> Welcome email: <%= @user.email %> </h1>
+
+
+</div>
