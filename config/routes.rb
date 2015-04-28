@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'tasks/new'
+
   get 'sessions/new'
 
   root 'landing#index'
