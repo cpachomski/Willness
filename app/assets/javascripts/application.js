@@ -17,8 +17,8 @@
 
 
 
-$document.ready(function(){
+$( document ).ready(function(){
   //sets landing main box to window size
   var windowHeight = $( window ).height();
-  $('.landing-main').css("height", windowHeight + "px")
+  $('.landing-main').css("height", windowHeight + "px");
 })
