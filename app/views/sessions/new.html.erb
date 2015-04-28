@@ -1,0 +1,27 @@
+
+<div class="header">
+  <h1> Willness </h1>
+</div>
+
+<div class='row'>
+
+  <div class='col-md-4'>
+    <h1> Log </h1>
+  </div>
+
+  <div class='col-md-4 form'>
+    <%= bootstrap_form_for(:session, url: login_path) do |f| %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :remember, class: 'checkbox' do  %>
+        <%= f.check_box :remember  %>
+      <% end %>
+      <%= f.submit "Welcome Back!", class: "btn btn-default signup"%>
+    <% end %>
+  </div>
+
+  <div class='col-md-4'>
+    <h1> In </h1>
+  </div>
+
+</div>
