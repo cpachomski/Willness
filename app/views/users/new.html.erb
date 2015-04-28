@@ -1,20 +1,26 @@
-<h1>Sign Up</h1>
 
+<div class="header">
+  <h1> Willness </h1>
+</div>
 
-<%= form_for(@user) do |f| %>
+<div class='row'>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+  <div class='col-md-4'>
+    <h1> SIGN </h1>
+  </div>
 
-  <%= f.label :email %>
-  <%= f.text_field :email %>
+  <div class='col-md-4 form'>
+    <%= bootstrap_form_for(@user) do |f| %>
+      <%= f.text_field :username, class: "form-control" %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <%= f.submit "Ready", class: "btn btn-default signup"%>
+    <% end %>
+  </div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  <div class='col-md-4'>
+    <h1> UP </h1>
+  </div>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-
-  <%= f.submit "Create Account" %>
-
-<% end %>
+</div>

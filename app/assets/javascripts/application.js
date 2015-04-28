@@ -13,5 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require boostrap-sprockets
 //= require_tree .
+
+
+
+$( document ).ready(function(){
+  //sets landing main box to window size
+  var windowHeight = $( window ).height();
+  $('.landing-main').css("height", windowHeight + "px");
+})

@@ -1,3 +1,31 @@
 // Place all the styles related to the Landing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.landing-main{
+  position:relative;
+  background: #549367;
+  height:100%;
+  width:100%;
+
+  h1{
+  margin:0 auto 50px auto;
+  color: white;
+  font-family: 'Neucha', cursive;
+  font-size: 300px;
+  }
+
+  .sub{
+    position:relative;
+    top:25%;
+    text-align:center;
+  }
+}
+
+.landing-footer{
+  background-color :white;
+  height: 300px;
+}
+
