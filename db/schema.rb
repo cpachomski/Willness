@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 20150428235401) do
     t.string   "title"
     t.string   "description"
     t.integer  "value"
-    t.string   "type"
-    t.boolean  "completed"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "category"
+    t.boolean  "completed",   default: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "users", force: :cascade do |t|

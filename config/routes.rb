@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'tasks/new'
+
 
   get 'sessions/new'
 
@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+
+  get 'tasks/new'
 
   resources :users
 
