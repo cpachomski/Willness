@@ -1,11 +1,16 @@
 
 <% @daily_tasks.each do |task| %>
-  <hr>
+
   <div class='daily-task'>
+  <hr>
+
     <h2> <%= task.title %>: <%= task.value %> points</h2>
     <h3> <%= task.category %> </h3>
     <p>  <%= task.description %> </p>
     <p>  <%= task.created_at %> </p>
-  </div>
+    <%= link_to 'Remove', task, method: :delete, data: {confirm: 'You sure?'},:class => 'btn btn-default'  %>
   <hr>
+  </div>
+
+
 <% end %>
