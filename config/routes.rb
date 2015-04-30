@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-
-
   get 'sessions/new'
 
   root 'landing#index'
@@ -13,7 +11,6 @@ Rails.application.routes.draw do
 
 
   resources :users
-
   resources :tasks
 
 
