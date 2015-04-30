@@ -22,9 +22,8 @@ ActiveRecord::Schema.define(version: 20150429204629) do
     t.string   "description"
     t.integer  "value"
     t.string   "category"
-    t.boolean  "completed",   default: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
