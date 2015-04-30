@@ -10,9 +10,11 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
-  get 'tasks/new'
+
 
   resources :users
+
+  resources :tasks
 
 
 end
