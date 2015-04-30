@@ -6,7 +6,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :description, presence: true
       t.integer :value, presence: true
       t.string :category, presence: true
-      t.boolean :completed, default: false
+
 
       t.timestamps null: false
     end
