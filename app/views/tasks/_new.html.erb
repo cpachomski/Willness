@@ -1,0 +1,11 @@
+<h4> Create a new Task </h4>
+
+      <%= bootstrap_form_for :tasks, url: url_for(controller: "tasks", action: "create")  do |f| %>
+        <%= f.text_field :title, class: "form-control"  %>
+        <%= f.text_field :description, class: "form-control" %>
+        <%= f.text_field :value, class: "form-control" %>
+        <%= f.text_field :category, class: "form-control" %>
+
+        <%= f.submit "Create Task", class: "btn btn-default" %>
+
+      <% end %>
