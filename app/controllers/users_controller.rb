@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(current_user.id)
     @daily_tasks = @user.tasks
+
   end
 
   def new
