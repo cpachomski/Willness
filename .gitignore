@@ -18,3 +18,4 @@
 
 # Ignore keys
 /config/local_keys.yml
+/config/secrets.yml
