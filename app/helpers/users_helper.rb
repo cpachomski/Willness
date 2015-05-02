@@ -1,31 +1,24 @@
 module UsersHelper
 
 
-  def setup_client
-    consumer_key = Rails.application.secrets.fitbit_key
-    consumer_secret = Rails.application.secrets.fitbit_secret
 
-    client = Fitgem::Client.new({:consumer_key => consumer_key, :consumer_secret => consumer_secret})
-    request_token = client.request_token
-    token = request_token.token
-    secret = request_token.secret
-
-
-
-    access_token = client.authorize(token, secret, {:oauth_verifier => verifier})
-
-    puts "verifier = " + verifier
-    puts "token = " + access_token.token
-    puts "secret =" + access_token.secret
-
-    return {:token => access_token.token, :secret => access_token.secret}
-  end
 
   def user_steps
 
-     setup_client[:token]
+    consumer_key = Rails.application.secrets.fitbit_key
+    consumer_secret = Rails.application.secrets.fitbit_secret
+    fitbit_token = Rails.application.secrets.fitbit_token
+    fitbit_token_secret = Rails.application.secrets.fitbit_token_secret
+
+    client = Fitgem::Client.new({:consumer_key => consumer_key, :consumer_secret => consumer_secret, :token => fitbit_token, :secret => fitbit_token_secret, :user_id => '2X5LVN'})
+
+    return { 'age' => client.user_info}
 
   end
+
+
+
+
 
 
 
