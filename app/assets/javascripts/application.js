@@ -12,8 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require bootstrap-sprockets
+//= require bootstrap-datepicker
+//= require picker
 //= require turbolinks
 //= require_tree .
+//= require_self
+
 
 
 
@@ -21,4 +27,13 @@ $( document ).ready(function(){
   //sets landing main box to window size
   var windowHeight = $( window ).height();
   $('.landing-main').css("height", windowHeight + "px");
+
+
 })
+
+
+
+
+  $(function() {
+    $('#datetimepicker1').datetimepicker();
+  });
