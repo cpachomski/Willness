@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+
+
   attr_accessor :remember_token
   has_secure_password
   has_many :tasks
@@ -35,6 +37,8 @@ class User < ActiveRecord::Base
     return false if remember_digest.nil?
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
+
+
 
 
 end
