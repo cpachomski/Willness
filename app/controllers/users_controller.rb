@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(current_user.id)
     @daily_tasks = @user.tasks
-    p <%= ENV['FITBIT_KEY'] %>
   end
 
   def new
