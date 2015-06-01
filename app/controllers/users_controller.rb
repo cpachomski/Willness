@@ -1,7 +1,4 @@
 class UsersController < ApplicationController
-
-
-
   def show
     @user = User.find(current_user.id)
     @daily_tasks = @user.tasks
@@ -36,5 +33,7 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
+
+
 
 end

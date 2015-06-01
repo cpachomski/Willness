@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'bootstrap_form'
+gem 'bootstrap-datepicker-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use PostgreSQL as the database for Active Record
@@ -45,6 +46,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+
+
 end
 
