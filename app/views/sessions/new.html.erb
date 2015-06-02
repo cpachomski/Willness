@@ -1,22 +1,22 @@
 
-<div class="header">
-  <h1> Willness </h1>
-</div>
+  <div class="header">
+    <h1> Willness </h1>
+  </div>
+
 
 <div class='row'>
 
 
 
-  <div class='col-md-4 form'>
-    <%= bootstrap_form_for(:session, url: login_path) do |f| %>
+    <%= bootstrap_form_for(:session, url: login_path, html: {class:"col-md-4 col-md-offset-4  col-xs-8 col-xs-offset-2 form"}) do |f| %>
       <%= f.email_field :email, class: "form-control" %>
       <%= f.password_field :password, class: "form-control" %>
       <%= f.label :remember, class: 'checkbox' do  %>
         <%= f.check_box :remember  %>
       <% end %>
-      <%= f.submit "Welcome Back!", class: "btn btn-default signup"%>
+      <%= f.submit "Submit", class: "btn submit"%>
     <% end %>
-  </div>
+
 
 
 </div>

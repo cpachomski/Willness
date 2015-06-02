@@ -22,20 +22,13 @@
 
 $Neucha: 'Neucha', cursive;
 
-.btn{
-    background: none;
-    color:white;
-    box-shadow:none;
-    margin: 0 15px 0 15px;
-    font-size: 30px;
-    font-family: $Neucha;
-    padding: 15px 35px;
-    &:hover{
-    color:#549367;
-    }
-  }
 
-  .signup{
-    margin-top:50px;
-  }
 
+
+.box-button{
+  background:#549367;
+  position: relatve;
+  width: 100%;
+  border-radius: 0;
+  font-family: Helvetica;
+}
