@@ -26,18 +26,19 @@ $( document ).ready(function(){
   //sets landing main box to window size
   var windowHeight = $( window ).height();
   $('.landing-main').css("height", windowHeight + "px");
+  $('.register-box').css("display", "none");
 
   $(function() {
 
     $('#login-form-link').click(function(e) {
         $(".login-box").delay(100).fadeIn(100);
-        $("#register-box").fadeOut(100);
+        $(".register-box").fadeOut(100);
         $('#register-form-link').removeClass('active');
         $(this).addClass('active');
         e.preventDefault();
     });
     $('#register-form-link').click(function(e) {
-        $("#register-box").delay(100).fadeIn(100);
+        $(".register-box").delay(100).fadeIn(100);
         $(".login-box").fadeOut(100);
         $('#login-form-link').removeClass('active');
         $(this).addClass('active');

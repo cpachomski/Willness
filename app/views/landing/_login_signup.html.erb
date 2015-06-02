@@ -13,23 +13,46 @@
             </div>
             <hr>
           </div>
-          <div class="login-box panel-body">
+          <div class="panel-body">
             <div class="row">
               <div class="col-lg-12">
-                <%= form_for :session, url: login_path, html:{style: 'display:block;'} do |f| %>
-                  <div class="form-group">
-                    <%= f.email_field :email, class: "form-control", placeholder: 'Email', tabindex: 1 %>
-                  </div>
-                  <div class="form-group">
-                    <%= f.password_field :password, class: "form-control", placeholder: 'Password'%>
-                  </div>
-                  <div class="form-group text-center">
-                    <%= f.label :remember, class: 'checkbox text-center' do  %>
-                      <%= f.check_box :remember %>Stay logged in?
-                    <% end %>
-                  </div>
-                    <%= f.submit "Login", class: "form-control btn btn-login", id: 'login-submit'%>
+                <div class='login-box'>
+                  <%= form_for :session, url: login_path, html:{style: 'display:block;'} do |f| %>
+                    <div class="form-group">
+                      <%= f.email_field :email, class: "form-control", placeholder: 'Email', tabindex: 1 %>
+                    </div>
+                    <div class="form-group">
+                      <%= f.password_field :password, class: "form-control", placeholder: 'Password'%>
+                    </div>
+                    <div class="form-group text-center">
+                      <%= f.label :remember, class: 'checkbox text-center' do  %>
+                        <%= f.check_box :remember %>Stay logged in?
+                      <% end %>
+                    </div>
+                      <%= f.submit "Login", class: "form-control btn btn-login", id: 'login-submit'%>
                   <% end %>
+                </div>
+                <div class='register-box'>
+                  <%= form_for @user, html:{style: "display:block;"} do |f| %>
+                  <div class='form-group'>
+                    <%= f.text_field :username, class: "form-control", placeholder: 'Username' %>
+                  </div>
+                  <div class="form-group">
+                      <%= f.email_field :email, class:'form-control', placeholder: 'Email' %>
+                  </div>
+                  <div class="form-group">
+                      <%= f.password_field :password, class:'form-control', placeholder: 'Password' %>
+                  </div>
+                  <div class="form-group">
+                      <%= f.password_field :password_confirmation, class:'form-control', placeholder: 'Confirm Password' %>
+                  </div>
+                      <%= f.submit "Register", class:"form-control btn btn-login", id: 'login-submit' %>
+
+
+
+
+                    <% end %>
+                </div>
               </div>
             </div>
           </div>
