@@ -10,8 +10,7 @@ class UsersController < ApplicationController
       user_id = '2X5LVN'
       client = return_client(user_id)
       #user_info is a hash of all fitbit user data
-      todays_activities = client.activities_on_date('today')
-      @todays_steps = todays_activities['summary']['steps']
+
   end
 
 
