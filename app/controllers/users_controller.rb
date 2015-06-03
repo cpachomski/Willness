@@ -1,15 +1,17 @@
 class UsersController < ApplicationController
+
   def show
-    @user = User.find(current_user.id)
-    @daily_tasks = @user.tasks
-    #hardcoded my user id for now
-    user_id = '2X5LVN'
-    client = return_client(user_id)
 
-    #user_info is a hash of all fitbit user data
-    todays_activities = client.activities_on_date('today')
-    @todays_steps = todays_activities['summary']['steps']
 
+      @user = User.find(current_user.id)
+      @daily_tasks = @user.tasks
+
+      #hardcoded my user id for now
+      user_id = '2X5LVN'
+      client = return_client(user_id)
+      #user_info is a hash of all fitbit user data
+      todays_activities = client.activities_on_date('today')
+      @todays_steps = todays_activities['summary']['steps']
   end
 
 
@@ -24,7 +26,7 @@ class UsersController < ApplicationController
       log_in(@user)
       redirect_to @user
     else
-      render 'new'
+      redirect_to root_url
     end
   end
 

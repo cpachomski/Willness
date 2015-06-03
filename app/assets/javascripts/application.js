@@ -20,13 +20,23 @@
 //= require_self
 
 
-
-
 $( document ).ready(function(){
-  //sets landing main box to window size
-  var windowHeight = $( window ).height();
-  $('.landing-main').css("height", windowHeight + "px");
+
+
+
+$('#sidebar-toggle').click(function(){
+    console.log('cmon')
+    $('.left-nav').toggleClass("open-sidebar");
+    $('#slider').toggleClass("change-blue");
+    $('.bar').toggleClass("change-white");
+  });
+
+
+  //functions for the login/register box
+
   $('.register-box').css("display", "none");
+
+ //sets transition for login/register box
 
   $(function() {
 
@@ -47,10 +57,10 @@ $( document ).ready(function(){
 
   });
 
+
 });
 
 
-  //sets transition for login/register box
 
 
 

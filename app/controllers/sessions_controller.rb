@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       #render error messages here
-      render 'new'
+      redirect_to root_url
     end
   end
 
