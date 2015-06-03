@@ -29,6 +29,7 @@ $('#sidebar-toggle').click(function(){
     $('.left-nav').toggleClass("open-sidebar");
     $('#slider').toggleClass("change-blue");
     $('.bar').toggleClass("change-white");
+    $('.dashboard').toggleClass("open-sidebar");
   });
 
 
