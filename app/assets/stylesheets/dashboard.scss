@@ -2,6 +2,7 @@ $neucha: 'Neucha', cursive;
 $my_light_gray: #BEC1C1;
 $my_blue: #4B6065;
 $my_green: #549367;
+$my_darker_green: #326441;
 
 .dashboard{
   position:absolute;
@@ -28,20 +29,25 @@ $my_green: #549367;
   font-size:35px;
   }
   li a{
-  color: $my_green;
-  background: white;
+  color: white;
+  background: $my_green;
   border-radius: 0;
   }
   li a:hover{
-  background: $my_green;
+  background: $my_darker_green;
   color:white
 
   }
   li.active a, li.active a:hover, li.active a:focus{
-  background:$my_green;
+  background:$my_darker_green;
   color:white;
   }
 }
 .dropdown-toggle{
   font-size: 20px;
+}
+
+
+.dashboard-container{
+  margin:25px;
 }

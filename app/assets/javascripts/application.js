@@ -33,6 +33,7 @@ $('#sidebar-toggle').click(function(){
   });
 
 
+
   //functions for the login/register box
 
   $('.register-box').css("display", "none");
