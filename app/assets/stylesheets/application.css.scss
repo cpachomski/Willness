@@ -23,6 +23,10 @@
 $Neucha: 'Neucha', cursive;
 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 .box-button{

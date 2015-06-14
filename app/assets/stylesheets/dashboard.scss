@@ -68,15 +68,23 @@ $my_darker_green: #326441;
 
 .tab-title{
   font-weight:400;
-  margin-left:25px;
-  span{
+  margin-left:10px;
+
     font-size:40px;
 
-  }
-  #smaller{
+
+ span{
     font-size:20px;
     vertical-align:20%;
     font-weight:200;
+    color:$my_green;
   }
 
+}
+
+.page-header{
+  font-size:25px;
+  font-weight:200;
+  border-bottom:solid $my_blue 1px;
+  margin-top:0;
 }

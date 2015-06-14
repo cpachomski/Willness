@@ -1,7 +1,7 @@
 <div id="day" class="tab-pane fade in active">
   <div class="dashboard-container">
 
-            <div class="tab-title"><span><%= todays_date.strftime("%A") %> | </span><span id="smaller"> <%= todays_date.strftime("%B")  %> <%= todays_date.strftime("%d") %>, <%= todays_date.strftime("%Y") %></span>
+            <div class="tab-title"><%= todays_date.strftime("%A") %> | <span> <%= todays_date.strftime("%B")  %> <%= todays_date.strftime("%d") %>, <%= todays_date.strftime("%Y") %></span>
             </div>
 
 
@@ -9,7 +9,7 @@
     <div class="container-fluid">
      <div class="row tasks-row">
       <div class='col-md-4 tasks-list'>
-
+       <div class="page-header">Uncompleted Tasks </div>
               <% @daily_tasks.each do |task| %>
                 <div class="panel panel-default">
                   <div class="panel-body">
