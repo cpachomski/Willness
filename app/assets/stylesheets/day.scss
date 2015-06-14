@@ -7,10 +7,12 @@ $my_darker_green: #326441;
 
 .panel-body{
   background:$my_blue;
-  color:$my_light_gray;
+  color:white;
+  font-size: 20px;
 }
-.right{
+.points{
   float:right;
+  font-size:16px;
 }
 
 .tasks-row{

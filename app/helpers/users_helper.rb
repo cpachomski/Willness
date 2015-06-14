@@ -35,8 +35,7 @@ module UsersHelper
 
 
   def todays_date
-    date = Date.today
-    return " #{date.strftime('%A')} - #{date.strftime('%B')} - #{date.strftime('%-d')} - #{date.strftime('%Y')}"
+    return Date.today
   end
 
 
