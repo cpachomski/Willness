@@ -1,10 +1,26 @@
 <div id="day" class="tab-pane fade in active">
   <div class="dashboard-container">
             <h1> TODAY </h1>
-            <h3><%= todays_date %></h3>
+            <h2><%= todays_date %></h2>
 
 
 
+    <div class="container-fluid">
+     <div class="row">
+      <div class='col-md-4 tasks-list'>
 
+              <% @daily_tasks.each do |task| %>
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                     Panel content
+                  </div>
+                  <div class="panel-footer">
+                  </div>
+                </div>
+             <% end %>
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>
