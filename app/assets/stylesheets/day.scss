@@ -4,3 +4,16 @@ $my_blue: #4B6065;
 $my_green: #549367;
 $my_darker_green: #326441;
 
+
+.panel-body{
+  background:$my_blue;
+  color:$my_light_gray;
+}
+.right{
+  float:right;
+}
+
+.tasks-row{
+  margin-top:50px;
+  margin-right:30px;
+}
