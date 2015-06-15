@@ -13,7 +13,7 @@
               <% @daily_tasks.each do |task| %>
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <%= task.title %> <span class="points">| <%= task.value %>pts. |</span>
+                    <%= task.title %> | <%= task.category %> <span class="points">| <%= task.value %>pts. |</span>
                   </div>
                   <div class="panel-footer">
                     <%= task.description %>
