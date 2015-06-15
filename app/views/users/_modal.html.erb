@@ -1,0 +1,36 @@
+<div class="modal fade" id="new_task_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Create new task</h4>
+      </div>
+      <div class="modal-body">
+        <% modal ||= false %>
+        <% remote = modal ? true : false %>
+
+          <%= form_for(@task, remote: remote, html: {role: :form, 'data-model' => 'person'}) do |f| %>
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control' %>
+
+          <%= f.label :category %>
+          <%= f.text_field :category, class: 'form-control' %>
+
+          <%= f.label :description %>
+          <%= f.text_field :description, class: 'form-control' %>
+
+          <%= f.label :value %>
+          <%= f.number_field :value, class: 'form-control' %>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <%= f.submit "Add", class: "btn btn-default" %>
+
+          <% end %>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
       @user = User.find(current_user.id)
       @daily_tasks = @user.tasks
+      @task = Task.new
 
       #hardcoded my user id for now
       user_id = '2X5LVN'

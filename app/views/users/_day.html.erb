@@ -9,7 +9,7 @@
     <div class="container-fluid">
      <div class="row tasks-row">
       <div class='col-md-4 tasks-list'>
-        <div class="page-header">Uncompleted Tasks </div>
+        <div class="page-header">Tasks <%= link_to 'add', '#new_task_modal', 'data-toggle' => 'modal' %> </div>
               <% @daily_tasks.each do |task| %>
                 <div class="panel panel-default">
                   <div class="panel-body">
@@ -23,9 +23,11 @@
                   </div>
                 </div>
              <% end %>
-
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<%= render "modal" %>
+
