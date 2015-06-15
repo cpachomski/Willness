@@ -6,11 +6,17 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params.merge(user_id: current_user.id))
-    if @task.save
-      redirect_to current_user
-    else
-      render 'landing/home'
-    end
+
+    respond_to do |format|
+      if @task.save
+        format.html {redirect_to @task}
+        format.json {render action: 'show', status: :created, location: @task}
+        format.js   {render action: 'show', status: :created, location: @task}
+      else
+        format.html {render action: 'new'}
+        format.json {render json: @task.errors, status: :unprocessable_entity}
+        format.js   {render json: @task.errors, status: :unprocessable_entity}
+      end
   end
 
 
