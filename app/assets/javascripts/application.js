@@ -25,11 +25,17 @@ $( document ).ready(function(){
 
 
 $('#sidebar-toggle').click(function(){
-    console.log('cmon')
     $('.left-nav').toggleClass("open-sidebar");
     $('#slider').toggleClass("change-blue");
     $('.bar').toggleClass("change-white");
     $('.dashboard').toggleClass("open-sidebar");
+    var tree_1 = document.getElementById("tree_1_animate");
+    var tree_2 = document.getElementById("tree_2_animate");
+    var tree_3 = document.getElementById("tree_3_animate");
+    tree_1.beginElement();
+    tree_2.beginElement();
+    tree_3.beginElement();
+
   });
 
 

@@ -1,12 +1,32 @@
 #tree_1{
-  stroke-dashoffset:1010.47;
-  stroke-dasharray:1010.47;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+  stroke-width:1;
+  stroke-dashoffset:1010.47px;
+  stroke-dasharray:1010.47px;
+
 }
 #tree_2{
-  stroke-dashoffset:767.77;
-  stroke-dasharray:767.77;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+  stroke-width:1;
+  stroke-dashoffset:767.77px;
+  stroke-dasharray:767.77px;
+
 }
 #tree_3{
-  stroke-dashoffset:1689.9046630859375;
-  stroke-dasharray:1689.9046630859375;
+  animation-fill-mode:forwards;
+  animation-iteration-count: 1;
+  stroke-width:1;
+
+  stroke-dashoffset:1689.904px;
+  stroke-dasharray:1689.904px;
+}
+
+
+
+@keyframes draw {
+  to{
+  stroke-dashoffset:0;
+  }
 }
