@@ -91,7 +91,7 @@ $my_darker_gray: #E4E4E4;
 
   #slider{
     position:relative;
-    background-color: $my_green;
+    background-color: $my_blue;
     width: 50px;
     height:100%;
     z-index:3;
@@ -136,7 +136,7 @@ $my_darker_gray: #E4E4E4;
     }
   }
   #slider.change-blue{
-    background-color: $my_blue;
+    background-color: $my_green;
   }
 
 }
