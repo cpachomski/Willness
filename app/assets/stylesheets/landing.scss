@@ -1,6 +1,7 @@
 // Place all the styles related to the Landing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$my_green: #549367;
 
 
 .landing-main{
@@ -134,4 +135,10 @@
 .entry{
   position:relative;
   margin-top:10px;
+}
+
+
+.panel-body.login{
+  background:white !important;
+  color: $my_green;
 }
